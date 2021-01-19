@@ -1,0 +1,10 @@
+Resources:
+  topic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: trevorsns12345
+      Tags:
+        - Key: Owner
+          Value: Trevor Sullivan
+        - Key: Owner2
+          Value: Trevor Sullivan

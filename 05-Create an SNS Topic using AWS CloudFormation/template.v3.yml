@@ -1,0 +1,14 @@
+Resources:
+  topic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: trevorsns12345
+      Tags:
+        - Key: Owner
+          Value: Sally Jones
+  sub:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Protocol: https
+      Endpoint: https://webhook.site/5631b3b1-3e9b-45e2-9965-67c14dfc756f?
+      TopicArn: !Ref topic

@@ -1,0 +1,1 @@
+New-CFNStack -StackName snstopic -TemplateBody (Get-Content -Raw -Path $PSScriptRoot/template.yml)
